@@ -1,0 +1,65 @@
+<!DOCTYPE html >
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adavanced Portfolio</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./index.js" async></script>
+</head>
+<body>
+    <header>
+        <h1>Ajay Parmar</h1>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        <button class="theme-toggle">🌓 Theme</button>
+    </header>
+    <main>
+        <section id="about" class="about">
+            <h2>About Me</h2>
+            <p>I’m a frontend developer with a passion for building intuitive user interfaces and accessible web
+                experiences. I value design systems, scalability, and performance.</p>
+        </section>
+        <section id="skills" class="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>JavaScript (ES6)</li>
+                <li>Flexbox/Grid</li>
+                <li>Accessibility (a11y)</li>
+                <li>Responsive Design</li>
+            </ul>
+        </section>
+        <section id="projects" class="projects">
+            <h2>Projects</h2>
+            <div class="project-tabs">
+                <button class="tab-btn active" data-tab="0">Portfolio</button>
+                <button class="tab-btn" data-tab="1">Blog</button>
+                <button class="tab-btn" data-tab="2">Shop UI</button>
+            </div>
+            <div class="project-content" id="project-content">
+                <h3>Portfolio</h3>
+                <p>A fully responsive and interactive personal portfolio with dark/light mode and dynamic project sections.</p>
+            </div>
+        </section>
+        <section id="contact" class="contact">
+            <h2>Contact Me</h2>
+            <form>
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea rows="5" placeholder="Your Message" required></textarea>
+                <input type="submit" value="Send">
+            </form>
+        </section>
+    </main>
+    <footer>
+        
+        © 2025 Jane Dev — All rights reserved.
+    </footer>
+</body>
+</html>

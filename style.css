@@ -1,0 +1,188 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    line-height: 1.6;
+    scroll-behavior: smooth;
+    transition: all .3s ease;
+    font-family: "Segoe UI", sans-serif;
+    background: #f8f7fc;
+}
+
+[data-theme="dark"] body {
+  background: #1c1c27;
+  color: #eaeaea;
+}
+
+[data-theme="dark"] header, [data-theme="dark"] footer {
+  background: #2b2b38;
+  color: #eaeaea;
+}
+
+[data-theme="dark"] nav a{
+  color: #eaeaea;
+}
+
+[data-theme="dark"] .tab-btn .active {
+  background: #2b2b38;
+  color: #eaeaea;
+}
+
+[data-theme="dark"] .tab-btn{
+  background: #2b2b38;
+  color: #eaeaea;
+}
+
+[data-theme="dark"] .skills li {
+  background: #2b2b38;
+  color: #eaeaea;
+}
+
+[data-theme="dark"] .project-content {
+  background: #2b2b38;
+  color: #eaeaea;
+}
+
+[data-theme="dark"] input,
+[data-theme="dark"] textarea {
+  background: #2b2b38;
+  color: #eaeaea;
+  border: 1px solid #666;
+}
+
+main{
+    padding: 2rem 1rem 2rem 1rem;
+    margin: auto;
+    max-width: 10in;
+}
+
+header{
+    box-shadow: 0 .125pc 6px rgba(0, 0, 0, .08);
+    z-index: 999;
+    top: 0;
+    position: sticky;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem 1rem 2rem;
+    background: #fff;
+}
+
+header h1{
+    font-size: 1.5rem;
+    color: #7c3aed;
+}
+
+nav a{
+    font-weight: 500;
+    text-decoration: none;
+    margin: 0 .8rem 0 .8rem;
+    color: #1f1f1f;
+}
+
+.theme-toggle{
+    font-size: .9rem;
+    cursor: pointer;
+    border-radius: .052083333in;
+    border: currentColor none;
+    color: #fff;
+    background: #7c3aed;
+    padding: .5rem 1rem .5rem 1rem;
+}
+
+section{
+    margin-bottom: 3rem;
+}
+
+h2{
+    border-bottom: 2px solid #7c3aed;
+    color: #7c3aed;
+    font-size: 2rem;
+    display: inline-block;
+    margin-bottom: 1rem;
+}
+
+.about p{
+    max-width: 525pt;
+}
+
+.skills ul{
+    margin-top: 1rem;
+    display: flex;
+    gap: .75rem;
+    list-style: none;
+    flex-wrap: wrap;
+}
+
+.skills li{
+    font-weight: 500;
+    border: .75pt solid #7c3aed;
+    border-radius: 1.25pc;
+    padding: .6rem 1rem .6rem 1rem;
+    background: #fff;
+}
+
+.project-tabs{
+    margin-top: 1rem;
+    gap: 1rem;
+    display: flex;
+}
+
+.project-tabs button{
+    /* color: white; */
+    color: black;
+    background: white;
+    transition: all .2s ease;
+    cursor: pointer;
+    border-radius: .052083333in;
+    border: .125pc solid #7c3aed;
+    padding: .5rem 1rem .5rem 1rem;
+}
+
+.project-tabs button.active{
+    color: white;
+    background: #7c3aed;
+}
+
+.project-content{
+    border-left: .041666667in solid #7c3aed;
+    padding: 1.5rem;
+    background: #fff;
+    margin-top: 2rem;
+    border-radius: .5pc;
+}
+
+form{
+    max-width: 450pt;
+    display: grid;
+    gap: 1rem;
+}
+
+input, textarea{
+    border-radius: .25pc;
+    color: #1f1f1f;
+    border: #ccc solid .010416667in;
+    background: #fff;
+    padding: .75rem;
+}
+
+input[type="submit"] {
+    cursor: pointer;
+    font-weight: bold;  
+    border: currentColor;
+    color: white;
+    background: #7c3aed;
+    border-radius: .25pc;
+}
+
+footer{
+    border-top: #ddd solid .0625pc;
+    color: #888;
+    font-size: .85rem;
+    padding: 2rem 1rem 2rem 1rem;
+    text-align: center;
+    background: #fff;
+}
