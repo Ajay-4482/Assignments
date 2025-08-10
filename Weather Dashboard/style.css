@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: #e0f7fa;
+    font-family: sans-serif;
+}
+
+.container{
+    max-width: 5.208333333in;
+    margin-top: 50px;
+    margin-left: 500px;
+}
+
+h1{
+    color: #00796b;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.search-box{
+    margin-bottom: 1.25pc;
+    gap: .104166667in;
+    display: flex;
+}
+
+.search-box input{
+    font-size: 16px;
+    padding: 7.5pt;
+    flex: 1;
+}
+
+.search-box button{
+    cursor: pointer;
+    background: #00796b;
+    color: white;
+    padding: 7.5pt;
+    border-image: none;
+    border: currentColor;
+}
+
+.error{
+    text-align: center;
+    color: red;
+}
+
+.weather-card{
+    text-align: center;
+    background: white;
+    border-radius: .5pc;
+    padding: .208333333in 1.25pc;
+    box-shadow: 0 1.5pt .0625in rgba(0, 0, 0, .1);
+}
+
+.weather-card h2, h3, p, img{
+    margin-top: 20px;
+}
+

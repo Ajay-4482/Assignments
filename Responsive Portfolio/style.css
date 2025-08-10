@@ -1,0 +1,170 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #f1faee;
+    font-family: "Segoe UI", sans-serif;
+}
+
+header{
+    text-align: center;
+    background-color: #1d3557;
+    color: white;
+    padding: 2rem 1rem;
+}
+
+header h1{
+    margin-bottom: .3rem;
+    font-size: 2rem;
+}
+
+header p{
+    color: #cde0f7;
+    font-size: 1.1rem;
+}
+
+@media (max-width: 600px) {
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+nav{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background-color: #457b9d;
+    gap: 2rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+nav a{
+    color: white;
+    font-weight: 500;
+    text-decoration: none;
+    transition: color .3s;
+}
+
+nav a:hover {
+      color: red;
+}
+
+main{
+    padding: 0 1rem;
+    margin: 2rem auto;
+    max-width: 1000px;
+}
+
+section{
+    margin-bottom: 3rem;
+}
+
+h2{
+    padding-left: .5rem;
+    border-left: #e63946 solid .052083333in;
+    color: #1d3557;
+    margin-bottom: 1rem;
+}
+
+.about p{
+    max-width: 700px;
+    font-size: 1.05rem;
+}
+
+@media (max-width: 600px) {
+    .skills {
+        justify-content: center;
+    }
+}
+
+.skills{
+    gap: .5rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.skills span{
+    background-color: #e63946;
+    color: white;
+    padding: .5rem 1rem;
+    border-radius: 20px;
+    font-size: .95rem;
+}
+
+.projects{
+    gap: 1.5rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.project{
+    background-color: white;
+    border: #ccc solid;
+    border-top-width: .0625pc;
+    border-right-width: .0625pc;
+    border-bottom-width: .010416667in;
+    border-left-width: .010416667in;
+    box-shadow: 0 1.5pt .375pc rgba(0, 0, 0, .05);
+    padding: 1rem;
+    border-radius: 6pt;
+    transition: transform .2s ease;
+}
+
+.project:hover{
+    transform: translateY(-3px);
+}
+
+.project h3{
+    margin-bottom: .5rem;
+    color: #457b9d;
+}
+
+.project p{
+    font-size: .95rem;
+}
+
+.project a{
+    font-weight: bold;
+    text-decoration: none;
+    color: #e63946;
+    margin-top: .5rem;
+    display: inline-block;
+}
+
+.contact form{
+    max-width: 37.5pc;
+    gap: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact input, textarea{
+    font-size: 1rem;
+    border: #ccc solid .0625pc;
+    border-radius: 4px;
+    padding: .8rem .8rem .8rem .8rem;
+}
+
+.contact button{
+    cursor: pointer;
+    border-radius: .25pc;
+    padding: .6rem 1.4rem .6rem 1.4rem;
+    background-color: #e63946;
+    border: currentColor;
+    color: white;
+    width: fit-content;
+}
+
+footer{
+    font-size: .9rem;
+    color: #666;
+    background-color: #eee;
+    padding: 1rem;
+    text-align: center;
+}
+

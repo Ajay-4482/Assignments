@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+body{
+    background-image: linear-gradient(to top left, #753682 0%, #bf2e34 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-weight: 400;
+    font-family: "Nunito", sans-serif;
+}
+
+main{
+    display: flex;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 3rem 5rem rgba(0, 0, 0, .25);
+    border-radius: .5625pc;
+    backdrop-filter: blur(200px);
+    filter: blur();
+    background-color: rgba(255, 255, 255, .35);
+    height: 60rem;
+    width: 100rem;
+}
+
+.player--active{
+    background-color: rgba(255, 255, 255, .4);
+    font-weight: 400;
+    opacity: 1;
+}
+
+.player{
+    transition: all .75s;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 9rem;
+    flex: 50%;
+}
+
+.player--winner{
+    background-color: #2f2f2f;
+}
+
+.name{
+    font-weight: 300;
+    margin-bottom: 1rem;
+    word-spacing: 2px;
+    letter-spacing: .75pt;
+    text-transform: uppercase;
+    font-size: 4rem;
+    position: relative;
+}
+
+.score{
+    margin-bottom: auto;
+    color: #c7365f;
+    font-size: 8rem;
+    font-weight: 300;
+}
+
+.current{
+    opacity: 1;
+    text-align: center;
+    padding: 2rem;
+    color: #fff;
+    width: 65%;
+    background-color: #c7365f;
+    border-radius: 9px;
+    transition: all .75s;
+}
+
+.current-label{
+    color: #ddd;
+    font-size: 1.7rem;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+}
+
+.current-score{
+    font-size: 3.5rem;
+}
+
+.hidden{
+    display: none;
+}
+
+.dice{
+    box-shadow: 0 2rem 5rem rgba(0, 0, 0, .2);
+    height: 10rem;
+    transform: translateX(-50%);
+    top: 16.5rem;
+    left: 50%;
+    position: absolute;
+}
+
+.btn--new{
+    top: 4rem;
+}
+
+.btn{
+    background-color: rgba(255, 255, 255, .6);
+    box-shadow: 0 1.75rem 3.5rem rgba(0, 0, 0, .1);
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    background: none;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-weight: 400;
+    transition: all .2s;
+    backdrop-filter: blur(10px);
+    border-radius: 50rem;
+    padding: .7rem 2.5rem .7rem 2.5rem;
+    font-family: inherit;
+    border: currentColor;
+    border-image: none;
+}
+
+.btn--roll{
+    top: 39.3rem;
+}
+
+.btn--hold{
+    top: 46.1rem;
+}

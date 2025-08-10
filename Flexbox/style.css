@@ -1,0 +1,95 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    padding: 20px 15pt 15pt 15pt;
+    margin: 0;
+}
+
+h1, section {
+    margin-bottom: 30pt;
+}
+
+h1{
+    text-align: center;
+}
+
+h2{
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 5px;
+    border-image: none;
+    margin-bottom: 10px;
+}
+
+.flexbox{
+    display: flex;
+    border: 1px solid #ccc;
+    gap: 7.5pt;
+    padding: 7.5pt;
+    margin-top: .625pc;
+}
+
+.box{
+    border: 1px solid #888;
+    text-align: center;
+    background-color: lightblue;
+    padding: 20px 15pt 15pt 15pt;
+}
+
+.column-example {
+    flex-direction: column;
+}
+
+.justify-center{
+    justify-content: center;
+}
+
+.justify-space-between{
+    justify-content: space-between;
+}
+
+.align-center{
+    height: 200px;
+    align-items: center;
+}
+
+.wrap-example{
+    flex-wrap: wrap;
+}
+
+.box-grow{
+    flex-grow: 1;
+}
+
+.box-grow-2{
+    flex-grow: 2;
+}
+
+.box-shrink{
+    flex-shrink: 1;
+}
+
+.box-basis{
+    flex-basis: 1.5625in;
+}
+
+.order-2{
+    order: 2;
+}
+
+.order-1{
+    order: 1;
+}
+
+.align-center{
+    align-items: center;
+}
+
+.align-self-start{
+    align-self: flex-start;
+}
+
+.align-self-end{
+    align-self: flex-end;
+}
